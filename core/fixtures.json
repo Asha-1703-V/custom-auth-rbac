@@ -1,0 +1,20 @@
+[
+    {"model": "core.role", "pk": 1, "fields": {"name": "admin"}},
+    {"model": "core.role", "pk": 2, "fields": {"name": "manager"}},
+    {"model": "core.role", "pk": 3, "fields": {"name": "user"}},
+    {"model": "core.resource", "pk": 1, "fields": {"name": "project"}},
+    {"model": "core.resource", "pk": 2, "fields": {"name": "task"}},
+    {"model": "core.resource", "pk": 3, "fields": {"name": "role"}},
+    {"model": "core.resource", "pk": 4, "fields": {"name": "permission"}},
+    {"model": "core.action", "pk": 1, "fields": {"name": "view"}},
+    {"model": "core.action", "pk": 2, "fields": {"name": "create"}},
+    {"model": "core.action", "pk": 3, "fields": {"name": "update"}},
+    {"model": "core.action", "pk": 4, "fields": {"name": "delete"}},
+    {"model": "core.permission", "pk": 1, "fields": {"role": 1, "resource": 1, "action": 1}},
+    {"model": "core.permission", "pk": 2, "fields": {"role": 1, "resource": 1, "action": 2}},
+    {"model": "core.permission", "pk": 3, "fields": {"role": 1, "resource": 1, "action": 3}},
+    {"model": "core.permission", "pk": 4, "fields": {"role": 1, "resource": 1, "action": 4}},
+    {"model": "core.permission", "pk": 5, "fields": {"role": 1, "resource": 3, "action": 2}},  # admin create roles
+    {"model": "core.permission", "pk": 6, "fields": {"role": 2, "resource": 1, "action": 1}},  # manager view projects
+    {"model": "core.permission", "pk": 7, "fields": {"role": 3, "resource": 2, "action": 1}}   # user view tasks
+]
